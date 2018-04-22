@@ -1,0 +1,31 @@
+<header class="masthead bg-primary text-white text-center">
+  <div class="container">
+    <img class="img-fluid mb-5 d-block mx-auto" src="assets/img/logo.png" alt="">
+    <h1 class="text-uppercase mb-0">{{appName}}</h1>
+    <hr class="star-light">
+    <h2 class="font-weight-light mb-0">Anonymous and simple file transfer system</h2>
+    <br>
+    <a class="btn btn-secondary btn-lg" data-toggle="modal" data-target="#exampleModal">Start</a>
+
+  </div>
+</header>
+
+<div class="copyright py-4 text-center text-white">
+  <div class="container">
+    <small>Copyright &copy; Scytale 2018</small>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="wrapper">
+      <form class="form-signin">
+        <h5 class="form-signin-heading">Create a temporal user</h5>
+        <br>
+        <input type="text" class="form-control" name="nickname" ng-model="nickname" placeholder="Nickname" required="" autofocus="" />
+        <br>
+        <p>{{errorMessage}}</p>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="createUser()" data-dismiss="modal">Login</button>
+      </form>
+    </div>
+</div>
